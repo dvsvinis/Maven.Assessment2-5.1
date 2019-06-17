@@ -10,8 +10,9 @@ public class Address {
     private String state;
     private String zipcode;
 
-    public Address() {
+    Address address = new Address();
 
+    public Address() {
     }
 
     /**
@@ -23,16 +24,16 @@ public class Address {
      */
     public Address(String addressLine1, String addressLine2, String city, String state, String zipcode) {
 
-        this.addressLine1 = "line1";
-        this.addressLine2 = "line2";
-        this.city = "city";
-        this.state = "state";
-        this.zipcode = "99999";
+        this.addressLine1 = addressLine1;
+        this.addressLine2 = addressLine2;
+        this.city = city;
+        this.state = state;
+        this.zipcode = zipcode;
     }
 
     public String getAddressLine1() {
 
-        return getAddressLine1();
+        return addressLine1;
     }
 
     public void setAddressLine1(String addressLine1) {
@@ -51,7 +52,7 @@ public class Address {
 
     public String getCity() {
 
-        return getCity();
+        return city;
     }
 
     public void setCity(String city) {
@@ -60,7 +61,7 @@ public class Address {
 
     public String getState() {
 
-        return getState();
+        return state;
     }
 
     public void setState(String state) {
@@ -69,7 +70,7 @@ public class Address {
 
     public String getZipcode() {
 
-        return getZipcode();
+        return zipcode;
     }
 
     public void setZipcode(String zipcode) {
