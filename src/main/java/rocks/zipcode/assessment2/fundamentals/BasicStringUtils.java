@@ -19,7 +19,9 @@ public class BasicStringUtils {
      * @return an identical string with characters in reverse order
      */
     public static String reverse(String string1) {
-        return null;
+        StringBuilder reversed = new StringBuilder(string1);
+          return reversed.reverse().toString();
+
     }
 
     /**
@@ -40,7 +42,7 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
-         return null;
+        return string.replaceAll(String.format("[%s]", charactersToRemove), "");
         }
 
     /**
@@ -49,6 +51,7 @@ public class BasicStringUtils {
      * @return reverse of `string` with `charactersToRemove` removed
      */
     public static String removeCharactersThenReverse(String string, String charactersToRemove) {
-        return null;
+        return reverse(removeCharacters(string, charactersToRemove));
+
     }
 }
