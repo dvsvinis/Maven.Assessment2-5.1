@@ -4,12 +4,15 @@ package rocks.zipcode.assessment2.collections;
  * Use a map to solve
  */
 public class MonthConversion {
+    private String monthName;
+    private Integer monthNumber;
     /**
      * @param monthNumber - ordinal of month in the year; i.e. January = 1, February = 2
      * @param monthName - name of month
      */
     public void add(Integer monthNumber, String monthName) {
-
+        this.monthNumber = monthNumber;
+        this.monthName = monthName;
     }
 
     /**
@@ -17,14 +20,18 @@ public class MonthConversion {
      * @return the name of the respective month
      */
     public String getName(Integer monthNumber) {
+
         throw new NullPointerException();
     }
+
+
 
     /**
      * @param monthName - name of month
      * @return - the ordinal of the month in the year
      */
     public int getNumber(String monthName) {
+
         return (Integer)null;
     }
 
@@ -33,6 +40,7 @@ public class MonthConversion {
      * @return true if the monthNumber is in the keySet
      */
     public Boolean isValidNumber(Integer monthNumber) {
+
         return null;
     }
 
@@ -41,6 +49,7 @@ public class MonthConversion {
      * @return true if the monthName is in the valueSet
      */
     public Boolean isValidMonth(String monthName) {
+
         return null;
     }
 
@@ -48,6 +57,7 @@ public class MonthConversion {
      * @return number of entries in this mapping
      */
     public Integer size() {
+
         return -1;
     }
 
@@ -58,4 +68,6 @@ public class MonthConversion {
     public void update(Integer monthNumber, String monthName) {
 
     }
+
+
 }
