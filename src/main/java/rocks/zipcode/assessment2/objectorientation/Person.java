@@ -17,6 +17,7 @@ public class Person {
     public Person(Long id, String name, Address address) {
         this.id = id;
         this.name = name;
+        this.address = address;
     }
 
     public Person() {
@@ -25,7 +26,8 @@ public class Person {
     }
 
     public Long getId() {
-        return getId();
+
+        return id;
     }
 
     public void setId(Long id) {
@@ -34,7 +36,7 @@ public class Person {
 
     public String getName() {
 
-        return getName();
+        return name;
     }
 
     public void setName(String name) {
@@ -42,7 +44,8 @@ public class Person {
     }
 
     public Address getAddress() {
-        return getAddress();
+
+        return address;
     }
 
     public void setAddress(Address address) {
@@ -51,7 +54,7 @@ public class Person {
 
     @Override
     public boolean equals(Object o) {
-
         return (this.equals(o));
     }
+
 }
