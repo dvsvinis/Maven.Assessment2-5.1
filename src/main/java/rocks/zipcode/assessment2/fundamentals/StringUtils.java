@@ -40,15 +40,22 @@ public class StringUtils {
      * @return - true if string only contains alpha characters
      */
     public static Boolean isAlphaString(String string) {
-        return null;
-    }
+
+        return string.matches("[a-zA-Z]+");
+     }
 
     /**
      * @param string - string to be evaluated
      * @return - true if string only contains numeric characters
      */
     public static Boolean isNumericString(String string) {
-        return null;
+        for (int i = 0; i < string.length(); i++) {
+            if("1234567890".contains(Character.valueOf(string.charAt(i)).toString())) {
+                continue;
+            }else {
+                return false;}
+        }
+        return true;
     }
 
     /**
@@ -56,6 +63,15 @@ public class StringUtils {
      * @return - true if string only contains special characters
      */
     public static Boolean isSpecialCharacterString(String string) {
-        return null;
+        char[] arr = string.toCharArray();
+
+        for(int i=0; i<arr.length; i++){
+            char c = arr[i];
+            if(Character.UnicodeBlock.of(c) != Character.UnicodeBlock.BASIC_LATIN){
+                return true;
+            }
+        }
+        return false;
     }
+
 }
