@@ -10,7 +10,7 @@ public class Address {
     private String state;
     private String zipcode;
 
-    Address address = new Address();
+
 
     public Address() {
     }
@@ -23,12 +23,12 @@ public class Address {
      * @param zipcode - zipcode of region
      */
     public Address(String addressLine1, String addressLine2, String city, String state, String zipcode) {
+        this.addressLine1 = "123 Gitlabs";
+        this.addressLine2 = "";
+        this.city = "New Castle";
+        this.state = "Delaware";
+        this.zipcode = "19720";
 
-        this.addressLine1 = addressLine1;
-        this.addressLine2 = addressLine2;
-        this.city = city;
-        this.state = state;
-        this.zipcode = zipcode;
     }
 
     public String getAddressLine1() {
