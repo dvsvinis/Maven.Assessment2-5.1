@@ -7,7 +7,8 @@ public class BasicStringUtils {
      * @return concatenation of `string1` and `string2`
      */
     public static String concatentate(String string1, String string2) {
-        return null;
+
+        return string1 + string2;
     }
 
     /**
@@ -24,7 +25,10 @@ public class BasicStringUtils {
      * @return concatenation of the reverse of `string1` and reverse of `string2`
      */
     public static String reverseThenConcatenate(String string1, String string2) {
-        return null;
+        StringBuilder reversed1 = new StringBuilder(string1);
+        StringBuilder reversed2 = new StringBuilder(string2);
+        String result = reversed1.reverse().toString() + reversed2.reverse().toString();
+        return result;
     }
 
     /**
