@@ -9,8 +9,6 @@ public class Person {
     private String name;
     private Address address;
 
-
-
     /**
      * @param id - id of person
      * @param name - name of person

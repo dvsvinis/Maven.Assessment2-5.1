@@ -11,6 +11,7 @@ public class Address {
     private String zipcode;
 
 
+
     public Address() {
         this.addressLine1 = "";
         this.addressLine2 = "";
@@ -81,9 +82,12 @@ public class Address {
         this.zipcode = zipcode;
     }
 
+
+
     @Override
     public boolean equals(Object o) {
-        return(this == o);
+        return (this == o);
+
     }
 
 }
