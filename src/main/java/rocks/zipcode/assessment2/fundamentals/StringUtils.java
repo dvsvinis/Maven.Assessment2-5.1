@@ -1,5 +1,7 @@
 package rocks.zipcode.assessment2.fundamentals;
 
+import java.util.regex.Pattern;
+
 /**
  * @author leon on 28/11/2018.
  */
@@ -40,8 +42,7 @@ public class StringUtils {
      * @return - true if string only contains alpha characters
      */
     public static Boolean isAlphaString(String string) {
-
-        return string.matches("[a-zA-Z]+");
+        return string.matches("[A-Za-z]");
      }
 
     /**
