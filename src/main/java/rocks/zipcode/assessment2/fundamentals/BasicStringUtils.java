@@ -1,5 +1,8 @@
 package rocks.zipcode.assessment2.fundamentals;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class BasicStringUtils {
     /**
      * @param string1 - Base string to be added to
@@ -37,8 +40,8 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
-        return null;
-    }
+         return null;
+        }
 
     /**
      * @param string - the string to be manipulated
