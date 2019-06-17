@@ -9,9 +9,10 @@ import java.util.Map;
  * Use a map to keep track of inventory in a store
  */
 public class Inventory {
-    private List<String> strings = new ArrayList<String>();
 
-    Map<Integer, String>inventory = new HashMap<Integer,String>();
+    private List<String> strings = new ArrayList<String>();    //i added this
+
+    Map<Integer, String>inventory = new HashMap<Integer,String>();     //i added this
 
 
     /**

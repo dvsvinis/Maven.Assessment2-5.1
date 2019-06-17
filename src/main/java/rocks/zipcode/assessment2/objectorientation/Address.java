@@ -33,7 +33,6 @@ public class Address {
         this.city = "New Castle";
         this.state = "Delaware";
         this.zipcode = "19720";
-
     }
 
     public String getAddressLine1() {
@@ -81,8 +80,6 @@ public class Address {
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
-
-
 
     @Override
     public boolean equals(Object o) {

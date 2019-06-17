@@ -6,6 +6,7 @@ package rocks.zipcode.assessment2.collections;
 public class MonthConversion {
     private String monthName;
     private Integer monthNumber;
+
     /**
      * @param monthNumber - ordinal of month in the year; i.e. January = 1, February = 2
      * @param monthName - name of month
@@ -19,9 +20,22 @@ public class MonthConversion {
      * @param monthNumber - ordinal of month in the year
      * @return the name of the respective month
      */
-    public String getName(Integer monthNumber) {
-
-        throw new NullPointerException();
+    public String getName(Integer monthNumber) throws NullPointerException{
+        String result = "";
+        if (monthNumber == 1) result = "January";
+        if (monthNumber == 2) result = "February";
+        if (monthNumber == 3) result = "March";
+        if (monthNumber == 4) result = "April";
+        if (monthNumber == 5) result = "May";
+        if (monthNumber == 6) result = "June";
+        if (monthNumber == 7) result = "July";
+        if (monthNumber == 8) result = "August";
+        if (monthNumber == 9) result = "September";
+        if (monthNumber == 10) result = "October";
+        if (monthNumber == 11) result = "November";
+        if (monthNumber == 12) result = "December";
+        return result;
+  //      throw new NullPointerException();
     }
 
 
