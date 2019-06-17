@@ -10,7 +10,7 @@ public class Address {
     private String state;
     private String zipcode;
 
-
+Address address = new Address();
 
     public Address() {
     }
