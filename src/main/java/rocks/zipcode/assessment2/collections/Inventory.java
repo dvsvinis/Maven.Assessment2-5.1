@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public class Inventory {
 
-    private List<String> strings = new ArrayList<String>();    //i added this
+    private List<String> strings;    //i added this
 
     Map<Integer, String>inventory = new HashMap<Integer,String>();     //i added this
 
@@ -19,6 +19,7 @@ public class Inventory {
      * @param strings list of strings to add / remove / fetch from
      */
     public Inventory(List<String> strings) {
+
         this.strings = strings;
     }
 

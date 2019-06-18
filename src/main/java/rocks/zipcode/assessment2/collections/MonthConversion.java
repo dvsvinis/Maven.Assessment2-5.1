@@ -38,8 +38,6 @@ public class MonthConversion {
   //      throw new NullPointerException();
     }
 
-
-
     /**
      * @param monthName - name of month
      * @return - the ordinal of the month in the year
