@@ -50,7 +50,7 @@ public class Person {
 
     public Address getAddress() {
 
-        return address;
+        return this.address;
     }
 
     public void setAddress(Address address) {

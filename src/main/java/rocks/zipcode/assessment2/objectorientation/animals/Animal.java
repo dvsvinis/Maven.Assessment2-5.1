@@ -11,8 +11,9 @@ public class Animal {
     private Long id;
     private Person owner;
 
-
     public Animal() {
+        this.id = null;
+        this.owner = new Person();
     }
 
     /**
@@ -33,7 +34,7 @@ public class Animal {
     }
 
     public Person getOwner() {
-        return owner;
+        return this.owner;
     }
 
     public void setOwner(Person owner) {
